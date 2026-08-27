@@ -1,0 +1,27 @@
+// This is your Prisma schema file.
+// Learn more about it in the docs: https://pris.ly/d/prisma-schema
+//
+// NOTE: This is a Stage 1 placeholder model only.
+// The full User / Email / Scheduling schema will be designed in Stage 2.
+//
+// ORM Choice: Prisma
+// Database: MySQL
+// Reason: Prisma provides a declarative schema file as a single source
+// of truth, auto-generated type-safe queries, and built-in migration
+// tooling — all with excellent TypeScript support.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Placeholder model — ensures Prisma Client can be generated.
+// This will be replaced by the full data model in Stage 2.
+model AppMeta {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+}
