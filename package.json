@@ -1,0 +1,13 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "email Scheduler",
+  "license": "ISC",
+  "author": "krishna",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run dev",
+    "start": "nodemon server.js"
+  }
+}
